@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layouts-common.css">
+    <style>
+
+      /* // [START lshifter] */
+      .container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+      }
+
+      .c1, .c2, .c3, .c4 {
+        width: 100%;
+      }
+
+      @media (min-width: 600px) {
+        .c1 {
+          width: 25%;
+        }
+
+        .c4 {
+          width: 75%;
+        }
+
+      }
+
+      @media (min-width: 800px) {
+        .container {
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      /* // [END lshifter] */
+
+
+    </style>
+    <title>Responsive Web Design Pattern: Layout Shifter</title>
+  </head>
+  <body>
+    <div class="container" role="main">
+      <div class="c1"></div>
+      <div class="c4">
+        <div class="c2"></div>
+        <div class="c3"></div>
+      </div>
+    </div>
+  </body>
+</html>
